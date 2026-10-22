@@ -137,8 +137,7 @@ export function TeamSection() {
                       </div>
                     </div>
 
-                    <div className="mt-8 pt-5 border-t border-[#E8DFC8] text-xs text-[#8A8275] flex items-center justify-between">
-                      <span>QRAEMON Co-founder</span>
+                    <div className="mt-8 pt-5 border-t border-[#E8DFC8] text-xs text-[#8A8275] flex items-center justify-end">
                       <span className="font-mono text-[#15120E] bg-[#FFF8E7] px-2 py-0.5 rounded border border-[#FFD875]">Full-Time R&D</span>
                     </div>
                   </div>
