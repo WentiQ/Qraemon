@@ -2,11 +2,11 @@ import { AlertOctagon, RotateCw, Wrench, Clock, DollarSign, CheckCircle2 } from 
 
 export function ProblemSection() {
   return (
-    <section id="problem" className="py-20 md:py-28 relative">
+    <section id="problem" className="py-24 md:py-32 relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-20">
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#8A8275] mb-3">
             <span>01 · The Operational Reality</span>
             <span aria-hidden="true" className="text-[#BAAF96]">·</span>
@@ -36,9 +36,9 @@ export function ProblemSection() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-7">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
             {/* Day 1 */}
-            <div className="bg-white border-1.5 border-[#15120E]/40 rounded-[14px_4px_16px_5px] p-5 relative shadow-[2px_3px_0px_0px_rgba(21,18,14,0.1)] -rotate-1 hover:rotate-0 transition-transform">
+            <div className="bg-white border-1.5 border-[#15120E]/40 rounded-[14px_4px_16px_5px] p-6 relative shadow-[2px_3px_0px_0px_rgba(21,18,14,0.1)] -rotate-1 hover:rotate-0 transition-transform">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-sm font-bold text-[#15120E]">Day 1</span>
                 <span className="text-[11px] font-mono text-[#8A8275] bg-[#FAF8F3] px-2 py-0.5 rounded-[4px_2px_5px_2px] border border-[#E8DFC8]">First Encounter</span>
@@ -53,7 +53,7 @@ export function ProblemSection() {
             </div>
 
             {/* Day 100 */}
-            <div className="bg-white border-1.5 border-[#15120E]/40 rounded-[5px_15px_6px_14px] p-5 relative shadow-[3px_3px_0px_0px_rgba(21,18,14,0.1)] rotate-0.5 hover:rotate-0 transition-transform">
+            <div className="bg-white border-1.5 border-[#15120E]/40 rounded-[5px_15px_6px_14px] p-6 relative shadow-[3px_3px_0px_0px_rgba(21,18,14,0.1)] rotate-0.5 hover:rotate-0 transition-transform">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-sm font-bold text-[#15120E]">Day 100</span>
                 <span className="text-[11px] font-mono text-[#8A8275] bg-[#FAF8F3] px-2 py-0.5 rounded-[3px_5px_2px_4px] border border-[#E8DFC8]">100 Days Later</span>
@@ -77,7 +77,7 @@ export function ProblemSection() {
             </div>
 
             {/* Day 1,000 */}
-            <div className="bg-white border-1.5 border-[#15120E]/40 rounded-[12px_6px_15px_4px] p-5 relative shadow-[2.5px_3.5px_0px_0px_rgba(21,18,14,0.1)] -rotate-0.5 hover:rotate-0 transition-transform">
+            <div className="bg-white border-1.5 border-[#15120E]/40 rounded-[12px_6px_15px_4px] p-6 relative shadow-[2.5px_3.5px_0px_0px_rgba(21,18,14,0.1)] -rotate-0.5 hover:rotate-0 transition-transform">
               <div className="flex items-center justify-between mb-4">
                 <span className="text-sm font-bold text-[#15120E]">Day 1,000</span>
                 <span className="text-[11px] font-mono text-[#8A8275] bg-[#FAF8F3] px-2 py-0.5 rounded-[4px_2px_5px_3px] border border-[#E8DFC8]">Years of Operation</span>
@@ -111,10 +111,10 @@ export function ProblemSection() {
         </div>
 
         {/* The Two Workflows: Legacy Reprogramming vs Experience-Informed with Asymmetric Angles */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
           
           {/* Workflow A: Current Status Quo */}
-          <div className="bg-white border-1.5 border-[#15120E]/30 rounded-[14px_5px_16px_6px] p-6 sm:p-7 relative shadow-[3px_3px_0px_0px_rgba(21,18,14,0.06)] -rotate-[0.4deg] hover:rotate-0 transition-transform">
+          <div className="bg-white border-1.5 border-[#15120E]/30 rounded-[14px_5px_16px_6px] p-7 sm:p-8 relative shadow-[3px_3px_0px_0px_rgba(21,18,14,0.06)] -rotate-[0.4deg] hover:rotate-0 transition-transform">
             <div className="flex items-center justify-between mb-4 pb-2 border-b border-[#F3F1EA]">
               <span className="text-xs font-bold uppercase tracking-wider text-[#A63232] flex items-center gap-1.5">
                 <AlertOctagon className="w-3.5 h-3.5" />
@@ -126,7 +126,7 @@ export function ProblemSection() {
               When an unexpected failure occurs in production today, the burden falls on engineering intervention:
             </p>
 
-            <div className="space-y-3 relative">
+            <div className="space-y-4 relative">
               <div className="flex items-center gap-3 text-xs p-2.5 rounded-[6px_3px_7px_3px] bg-[#FAF8F3] border border-[#E8DFC8]">
                 <div className="w-6 h-6 rounded-full bg-stone-200 text-[#15120E] font-mono font-bold flex items-center justify-center shrink-0">1</div>
                 <div><span className="font-semibold text-[#15120E]">Robot attempt fails</span> on environmental variance</div>
@@ -155,7 +155,7 @@ export function ProblemSection() {
           </div>
 
           {/* Workflow B: QRAEMON Experience Loop */}
-          <div className="bg-white border-2 border-[#15120E] rounded-[6px_16px_5px_15px] p-6 sm:p-7 relative shadow-[4px_4px_0px_0px_#FFB800] rotate-[0.5deg] hover:rotate-0 transition-transform">
+          <div className="bg-white border-2 border-[#15120E] rounded-[6px_16px_5px_15px] p-7 sm:p-8 relative shadow-[4px_4px_0px_0px_#FFB800] rotate-[0.5deg] hover:rotate-0 transition-transform">
             <div className="flex items-center justify-between mb-4 pb-2 border-b border-[#F3F1EA]">
               <span className="text-xs font-bold uppercase tracking-wider text-[#15120E] flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#FFB800]" />
@@ -167,7 +167,7 @@ export function ProblemSection() {
               Persistent, outcome-linked memory allows the robot to adapt locally without rewriting control policies:
             </p>
 
-            <div className="space-y-3 relative">
+            <div className="space-y-4 relative">
               <div className="flex items-center gap-3 text-xs p-2.5 rounded-[5px_4px_6px_3px] bg-[#FAF8F3] border border-[#E8DFC8]">
                 <div className="w-6 h-6 rounded-full bg-[#FFB800] text-[#15120E] font-mono font-bold flex items-center justify-center shrink-0">1</div>
                 <div><span className="font-semibold text-[#15120E]">Robot attempt encounters unexpected outcome</span></div>
@@ -198,7 +198,7 @@ export function ProblemSection() {
         </div>
 
         {/* Quantified Economics Strip (Verified from Source Deck Slide 3 & 5) */}
-        <div className="border border-[#D8D2C2] bg-white rounded-md p-6 sm:p-8">
+        <div className="border border-[#D8D2C2] bg-white rounded-md p-7 sm:p-10">
           <div className="text-xs font-semibold uppercase tracking-wider text-[#8A8275] mb-5">
             Verified Industry Cost Factors · Source: Robotics Integration & Manufacturing Surveys
           </div>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Send, CheckCircle2, MessageSquare, ArrowRight, Building, HelpCircle } from 'lucide-react';
+import { Mail, Send, CheckCircle2, MessageSquare, ArrowRight, Building, HelpCircle, Linkedin } from 'lucide-react';
 
 interface ContactSectionProps {
   initialMode?: string;
@@ -26,11 +26,11 @@ export function ContactSection({ initialMode }: ContactSectionProps) {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-28 border-t border-[#D8D2C2]/70 relative">
+    <section id="contact" className="py-24 md:py-32 border-t border-[#D8D2C2]/70 relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-20">
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#8A8275] mb-3">
             <span>08 · Collaboration</span>
             <span aria-hidden="true" className="text-[#BAAF96]">·</span>
@@ -46,10 +46,10 @@ export function ContactSection({ initialMode }: ContactSectionProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 items-start">
           
           {/* Left Column: The Central Discovery Question & Contact Info */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-5 space-y-8">
             
             {/* Notebook Tilt Card with Masking Tape Accent */}
             <div className="relative">
@@ -57,7 +57,7 @@ export function ContactSection({ initialMode }: ContactSectionProps) {
                 className="absolute inset-0 bg-[#E8DFC8] border border-[#D8D2C2] rounded-[16px_5px_18px_6px] -rotate-2 translate-x-1.5 translate-y-1.5 pointer-events-none"
                 aria-hidden="true"
               />
-              <div className="relative bg-[#FAF8F3] border-1.5 border-[#15120E] rounded-[14px_6px_16px_5px] p-6 sm:p-7 shadow-[3px_3px_0px_0px_#15120E] -rotate-1 hover:rotate-0 transition-transform">
+              <div className="relative bg-[#FAF8F3] border-1.5 border-[#15120E] rounded-[14px_6px_16px_5px] p-7 sm:p-9 shadow-[3px_3px_0px_0px_#15120E] -rotate-1 hover:rotate-0 transition-transform">
                 {/* Wobbly masking tape graphic */}
                 <div 
                   className="absolute -top-3.5 left-8 bg-[#FFB800] text-[#15120E] text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-[1px_4px_2px_5px] shadow-xs border border-[#15120E] -rotate-2"
@@ -75,24 +75,51 @@ export function ContactSection({ initialMode }: ContactSectionProps) {
               </div>
             </div>
 
-            <div className="bg-white border-1.5 border-[#15120E]/40 rounded-[6px_14px_5px_15px] p-6 space-y-4 text-xs shadow-[2px_3px_0px_0px_rgba(21,18,14,0.06)] rotate-[0.4deg] hover:rotate-0 transition-transform">
+            <div className="bg-white border-1.5 border-[#15120E]/40 rounded-[6px_14px_5px_15px] p-7 sm:p-8 space-y-5 text-sm shadow-[2px_3px_0px_0px_rgba(21,18,14,0.06)] rotate-[0.4deg] hover:rotate-0 transition-transform">
               <h4 className="font-bold text-[#15120E] text-sm">Direct Contact</h4>
               <p className="text-[#554E44] leading-relaxed">
                 For research discussions, technical briefs, or pilot proposals, contact the founding team directly:
               </p>
               
-              <div className="pt-2">
+              <div className="flex flex-col items-start gap-3 pt-2">
                 <a
                   href="mailto:dineshpolavarapu66@gmail.com"
-                  className="inline-flex items-center gap-2.5 text-xs font-semibold text-[#15120E] hover:text-[#B27F00] transition-colors py-1 bg-[#FAF8F3] px-3 py-1.5 rounded-[4px_8px_3px_7px] border border-[#E8DFC8]"
+                  className="inline-flex items-center gap-2.5 text-sm font-semibold text-[#15120E] hover:text-[#B27F00] transition-colors py-1.5 bg-[#FAF8F3] px-3 rounded-[4px_8px_3px_7px] border border-[#E8DFC8]"
                 >
                   <Mail className="w-4 h-4 text-[#8A8275]" />
                   <span>dineshpolavarapu66@gmail.com</span>
                 </a>
+                <a
+                  href="mailto:kankati.mokshagnaanurag@gmail.com"
+                  className="inline-flex items-center gap-2.5 text-sm font-semibold text-[#15120E] hover:text-[#B27F00] transition-colors py-1.5 bg-[#FAF8F3] px-3 rounded-[4px_8px_3px_7px] border border-[#E8DFC8]"
+                >
+                  <Mail className="w-4 h-4 text-[#8A8275]" />
+                  <span>kankati.mokshagnaanurag@gmail.com</span>
+                </a>
+                <div className="flex flex-wrap gap-x-5 gap-y-2 pt-1 text-sm">
+                  <a
+                    href="https://www.linkedin.com/in/dinesh-polavarapu-134029306/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-[#554E44] hover:text-[#15120E] transition-colors"
+                  >
+                    <Linkedin className="h-4 w-4 text-[#8A8275]" />
+                    <span>Dinesh on LinkedIn</span>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/mokshagnaanurag/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-[#554E44] hover:text-[#15120E] transition-colors"
+                  >
+                    <Linkedin className="h-4 w-4 text-[#8A8275]" />
+                    <span>Mokshagna on LinkedIn</span>
+                  </a>
+                </div>
               </div>
 
               <div className="pt-3 border-t border-[#F3F1EA] text-[11px] text-[#8A8275]">
-                Dinesh Polavarapu · Founder & CEO
+                Dinesh Polavarapu · Founder & CEO <span aria-hidden="true">·</span> Mokshagna Anurag Kankati · Co-founder & CTO
               </div>
             </div>
 
@@ -108,7 +135,7 @@ export function ContactSection({ initialMode }: ContactSectionProps) {
               className="absolute inset-0 bg-[#E8DFC8] border border-[#D8D2C2] rounded-[18px_6px_20px_8px] rotate-1 translate-x-1.5 translate-y-2 pointer-events-none"
               aria-hidden="true"
             />
-            <div className="relative bg-white border-1.5 border-[#15120E] rounded-[16px_6px_17px_5px] p-7 sm:p-9 shadow-[4px_4px_0px_0px_#15120E] -rotate-[0.3deg] hover:rotate-0 transition-transform">
+            <div className="relative bg-white border-1.5 border-[#15120E] rounded-[16px_6px_17px_5px] p-8 sm:p-10 shadow-[4px_4px_0px_0px_#15120E] -rotate-[0.3deg] hover:rotate-0 transition-transform">
               
               {submitted ? (
                 <div className="text-center py-10 space-y-4 animate-in fade-in duration-300">
@@ -131,7 +158,7 @@ export function ContactSection({ initialMode }: ContactSectionProps) {
                   </div>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-5">
+                <form onSubmit={handleSubmit} className="space-y-7">
                   <div className="border-b border-[#F3F1EA] pb-3">
                     <h3 className="text-lg font-bold text-[#15120E]">
                       Explore a Design Partnership
@@ -146,7 +173,7 @@ export function ContactSection({ initialMode }: ContactSectionProps) {
                     <label className="text-xs font-semibold text-[#15120E] block mb-2">
                       Your Organization / Profile:
                     </label>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                       {[
                         { id: 'robotics_startup', label: 'Robotics Startup' },
                         { id: 'industrial_rd', label: 'Industrial R&D' },
@@ -170,7 +197,7 @@ export function ContactSection({ initialMode }: ContactSectionProps) {
                   </div>
 
                   {/* Name and Email */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label className="text-xs font-semibold text-[#15120E] block mb-1.5">
                         Your Name *
@@ -200,7 +227,7 @@ export function ContactSection({ initialMode }: ContactSectionProps) {
                   </div>
 
                   {/* Organization & Robot Platform */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label className="text-xs font-semibold text-[#15120E] block mb-1.5">
                         Company or Institution

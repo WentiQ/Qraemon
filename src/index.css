@@ -11,6 +11,11 @@ body {
   color: #15120E;
 }
 
+main > section:not(:first-child) .text-xs {
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
 code, pre, .font-mono {
   font-family: var(--font-mono);
 }
@@ -71,4 +76,3 @@ code, pre, .font-mono {
 ::-webkit-scrollbar-thumb:hover {
   background: #BAAF96;
 }
-

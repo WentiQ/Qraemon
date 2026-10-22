@@ -41,11 +41,11 @@ export function ArchitectureSection() {
   ];
 
   return (
-    <section id="architecture" className="py-20 md:py-28 border-t border-[#D8D2C2]/70 relative">
+    <section id="architecture" className="py-24 md:py-32 border-t border-[#D8D2C2]/70 relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-20">
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#8A8275] mb-3">
             <span>04 · System Architecture</span>
             <span aria-hidden="true" className="text-[#BAAF96]">·</span>
@@ -62,7 +62,7 @@ export function ArchitectureSection() {
         </div>
 
         {/* Canonical Architecture Block Diagram */}
-        <div className="bg-[#FAF8F3] border border-[#D8D2C2] rounded-md p-6 sm:p-9 mb-14 shadow-2xs">
+        <div className="bg-[#FAF8F3] border border-[#D8D2C2] rounded-md p-8 sm:p-10 mb-20 shadow-2xs">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-5 border-b border-[#E8DFC8] gap-3 mb-8">
             <div>
               <span className="text-xs font-mono font-semibold uppercase tracking-wider text-[#8A8275]">
@@ -78,10 +78,10 @@ export function ArchitectureSection() {
           </div>
 
           {/* Graphical Flow Representation */}
-          <div className="space-y-6">
+          <div className="space-y-8">
             
             {/* Top: Inputs & Sensors */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-4 bg-white border border-[#E8DFC8] rounded flex items-center justify-between">
                 <div>
                   <span className="text-[10px] font-mono uppercase tracking-wider text-[#8A8275]">External Perception</span>
@@ -117,23 +117,23 @@ export function ArchitectureSection() {
                 </span>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div className="p-3.5 bg-[#FAF8F3] border border-[#E8DFC8] rounded-[10px_4px_9px_3px] shadow-2xs">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div className="p-4 bg-[#FAF8F3] border border-[#E8DFC8] rounded-[10px_4px_9px_3px] shadow-2xs">
                   <span className="text-[10px] font-mono uppercase font-bold text-[#8A8275]">Module 1</span>
                   <p className="text-xs font-bold text-[#15120E]">Context Construction</p>
                   <p className="text-[11px] text-[#554E44] mt-1">Normalizes frames, tracks data freshness & uncertainty</p>
                 </div>
-                <div className="p-3.5 bg-[#FAF8F3] border border-[#E8DFC8] rounded-[4px_10px_3px_9px] shadow-2xs">
+                <div className="p-4 bg-[#FAF8F3] border border-[#E8DFC8] rounded-[4px_10px_3px_9px] shadow-2xs">
                   <span className="text-[10px] font-mono uppercase font-bold text-[#8A8275]">Module 2</span>
                   <p className="text-xs font-bold text-[#15120E]">Experience Memory</p>
                   <p className="text-[11px] text-[#554E44] mt-1">Outcome-linked retrieval, scoring, & consolidation</p>
                 </div>
-                <div className="p-3.5 bg-[#FAF8F3] border border-[#E8DFC8] rounded-[9px_3px_10px_4px] shadow-2xs">
+                <div className="p-4 bg-[#FAF8F3] border border-[#E8DFC8] rounded-[9px_3px_10px_4px] shadow-2xs">
                   <span className="text-[10px] font-mono uppercase font-bold text-[#8A8275]">Module 3</span>
                   <p className="text-xs font-bold text-[#15120E]">Reasoning & Planning</p>
                   <p className="text-[11px] text-[#554E44] mt-1">Evaluates candidates against retrieved failure causes</p>
                 </div>
-                <div className="p-3.5 bg-[#FAF8F3] border border-[#E8DFC8] rounded-[3px_9px_4px_10px] shadow-2xs">
+                <div className="p-4 bg-[#FAF8F3] border border-[#E8DFC8] rounded-[3px_9px_4px_10px] shadow-2xs">
                   <span className="text-[10px] font-mono uppercase font-bold text-[#8A8275]">Module 4</span>
                   <p className="text-xs font-bold text-[#15120E]">Skill / Action Manager</p>
                   <p className="text-[11px] text-[#554E44] mt-1">Generates bounded task-level actions with constraints</p>
@@ -147,7 +147,7 @@ export function ArchitectureSection() {
             </div>
 
             {/* Safety Gateway & Robot Controller Section with Authored Angle */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-7">
               
               {/* Safety Gateway with distinct protective angle */}
               <div className="lg:col-span-5 p-5 bg-[#FAF8F3] border-1.5 border-[#C53030] rounded-[14px_4px_16px_5px] shadow-[3px_3px_0px_0px_rgba(197,48,48,0.25)] rotate-[0.6deg] hover:rotate-0 transition-transform">
@@ -186,10 +186,10 @@ export function ArchitectureSection() {
         </div>
 
         {/* Action Guard Pipeline & The Three Logical Data Planes */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
           {/* Left: The Action Guard Pipeline */}
-          <div className="lg:col-span-6 bg-white border border-[#D8D2C2] rounded-md p-6 sm:p-7">
+          <div className="lg:col-span-6 bg-white border border-[#D8D2C2] rounded-md p-7 sm:p-9">
             <div className="flex items-center justify-between mb-4 pb-2 border-b border-[#F3F1EA]">
               <h3 className="text-base font-bold text-[#15120E]">
                 The Action Guard Pipeline
@@ -200,7 +200,7 @@ export function ArchitectureSection() {
               Every action proposed by QRAEMON must pass through an explicit validation sequence before actuation signals are generated:
             </p>
 
-            <div className="space-y-2.5">
+            <div className="space-y-4">
               {actionGuardPipeline.map((guard) => (
                 <div key={guard.step} className="p-3 bg-[#FAF8F3] border border-[#E8DFC8] rounded flex items-start gap-3">
                   <Check className="w-4 h-4 text-[#FFB800] shrink-0 mt-0.5" />
@@ -218,7 +218,7 @@ export function ArchitectureSection() {
           </div>
 
           {/* Right: The Three Logical Data Planes Interactive Inspector */}
-          <div className="lg:col-span-6 bg-white border border-[#D8D2C2] rounded-md p-6 sm:p-7">
+          <div className="lg:col-span-6 bg-white border border-[#D8D2C2] rounded-md p-7 sm:p-9">
             <div className="flex items-center justify-between mb-4 pb-2 border-b border-[#F3F1EA]">
               <h3 className="text-base font-bold text-[#15120E]">
                 The Three Logical Data Planes

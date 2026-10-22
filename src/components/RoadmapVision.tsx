@@ -55,11 +55,11 @@ export function RoadmapVision() {
   ];
 
   return (
-    <section id="roadmap" className="py-20 md:py-28 border-t border-[#D8D2C2]/70 relative">
+    <section id="roadmap" className="py-24 md:py-32 border-t border-[#D8D2C2]/70 relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-20">
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#8A8275] mb-3">
             <span>06 · Research Direction</span>
             <span aria-hidden="true" className="text-[#BAAF96]">·</span>
@@ -76,7 +76,7 @@ export function RoadmapVision() {
         </div>
 
         {/* Staged Engineering Gates */}
-        <div className="bg-[#FAF8F3] border border-[#D8D2C2] rounded-md p-6 sm:p-9 mb-16 shadow-2xs">
+        <div className="bg-[#FAF8F3] border border-[#D8D2C2] rounded-md p-8 sm:p-10 mb-20 shadow-2xs">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 border-b border-[#E8DFC8] gap-2 mb-8">
             <div>
               <span className="text-xs font-mono font-semibold uppercase tracking-wider text-[#8A8275]">
@@ -91,7 +91,7 @@ export function RoadmapVision() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {gates.map((g, idx) => {
               const tilts = ['-rotate-[0.6deg]', 'rotate-[0.5deg]', '-rotate-[0.4deg]', 'rotate-[0.6deg]', '-rotate-[0.5deg]', 'rotate-[0.4deg]'];
               const radii = [
@@ -105,7 +105,7 @@ export function RoadmapVision() {
               return (
                 <div 
                   key={g.gate} 
-                  className={`bg-white border-1.5 border-[#15120E]/30 ${radii[idx]} ${tilts[idx]} hover:rotate-0 p-5 flex flex-col justify-between shadow-[2px_3px_0px_0px_rgba(21,18,14,0.08)] transition-all relative`}
+                  className={`bg-white border-1.5 border-[#15120E]/30 ${radii[idx]} ${tilts[idx]} hover:rotate-0 p-6 flex flex-col justify-between shadow-[2px_3px_0px_0px_rgba(21,18,14,0.08)] transition-all relative`}
                 >
                   <div>
                     <div className="flex items-center justify-between mb-3">
@@ -139,7 +139,7 @@ export function RoadmapVision() {
             className="absolute inset-0 bg-[#E8DFC8] border border-[#D8D2C2] rounded-[18px_6px_20px_8px] -rotate-1 translate-x-2 translate-y-2 pointer-events-none"
             aria-hidden="true"
           />
-          <div className="relative bg-white border-2 border-[#15120E] rounded-[16px_7px_17px_6px] p-7 sm:p-10 shadow-[4px_4px_0px_0px_#15120E] rotate-[0.3deg] hover:rotate-0 transition-transform">
+          <div className="relative bg-white border-2 border-[#15120E] rounded-[16px_7px_17px_6px] p-8 sm:p-12 shadow-[4px_4px_0px_0px_#15120E] rotate-[0.3deg] hover:rotate-0 transition-transform">
             <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between pb-6 border-b border-[#E8DFC8] gap-4 mb-8">
               <div className="max-w-xl">
                 <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#FFB800] bg-[#15120E] px-2.5 py-0.5 rounded-[4px_2px_5px_2px] -rotate-1 inline-block">
@@ -168,7 +168,7 @@ export function RoadmapVision() {
               Architectural Expansion Sequence
             </span>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 pt-4">
               {expansionProgression.map((item, index) => (
                 <div key={item.stage} className="p-3.5 bg-[#FAF8F3] border border-[#E8DFC8] rounded flex flex-col justify-between">
                   <div>

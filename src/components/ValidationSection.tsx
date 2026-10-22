@@ -65,11 +65,11 @@ export function ValidationSection() {
   ];
 
   return (
-    <section id="validation" className="py-20 md:py-28 border-t border-[#D8D2C2]/70 relative">
+    <section id="validation" className="py-24 md:py-32 border-t border-[#D8D2C2]/70 relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-20">
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#8A8275] mb-3">
             <span>05 · Empirical Rigor</span>
             <span aria-hidden="true" className="text-[#BAAF96]">·</span>
@@ -86,7 +86,7 @@ export function ValidationSection() {
         </div>
 
         {/* 6 Research Principles Grid with Alternating Tilts and Organic Radii */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {principles.map((item, idx) => {
             const tilts = ['-rotate-[0.5deg]', 'rotate-[0.6deg]', '-rotate-[0.4deg]', 'rotate-[0.4deg]', '-rotate-[0.6deg]', 'rotate-[0.5deg]'];
             const radii = [
@@ -100,7 +100,7 @@ export function ValidationSection() {
             return (
               <div 
                 key={item.num} 
-                className={`bg-white border-1.5 border-[#15120E]/35 ${radii[idx]} ${tilts[idx]} hover:rotate-0 p-6 flex flex-col justify-between shadow-[2px_3px_0px_0px_rgba(21,18,14,0.08)] transition-all`}
+                className={`bg-white border-1.5 border-[#15120E]/35 ${radii[idx]} ${tilts[idx]} hover:rotate-0 p-7 flex flex-col justify-between shadow-[2px_3px_0px_0px_rgba(21,18,14,0.08)] transition-all`}
               >
                 <div>
                   <span className="text-xs font-mono font-bold text-[#8A8275] block mb-2">
@@ -115,7 +115,7 @@ export function ValidationSection() {
         </div>
 
         {/* The Core PMF Experiment: Controlled Comparison Box */}
-        <div className="bg-[#FAF8F3] border border-[#D8D2C2] rounded-md p-6 sm:p-9 mb-14 shadow-2xs">
+        <div className="bg-[#FAF8F3] border border-[#D8D2C2] rounded-md p-8 sm:p-10 mb-20 shadow-2xs">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 border-b border-[#E8DFC8] gap-4 mb-8">
             <div>
               <span className="text-xs font-mono font-semibold uppercase tracking-wider text-[#8A8275]">
@@ -131,10 +131,10 @@ export function ValidationSection() {
           </div>
 
           {/* Side by Side Experimental Setup with Asymmetric Inclinations */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
             
             {/* Left: Control Baseline */}
-            <div className="bg-white border-1.5 border-[#15120E]/30 rounded-[14px_5px_16px_6px] p-6 relative shadow-[3px_3px_0px_0px_rgba(21,18,14,0.06)] -rotate-[0.4deg] hover:rotate-0 transition-transform">
+            <div className="bg-white border-1.5 border-[#15120E]/30 rounded-[14px_5px_16px_6px] p-7 relative shadow-[3px_3px_0px_0px_rgba(21,18,14,0.06)] -rotate-[0.4deg] hover:rotate-0 transition-transform">
               <div className="flex items-center justify-between mb-3 pb-2 border-b border-[#F3F1EA]">
                 <span className="text-xs font-bold uppercase tracking-wider text-[#6B6358]">
                   Control: Identical Robot Without QRAEMON
@@ -162,7 +162,7 @@ export function ValidationSection() {
             </div>
 
             {/* Right: Treatment Group */}
-            <div className="bg-white border-2 border-[#15120E] rounded-[6px_16px_5px_15px] p-6 relative shadow-[4px_4px_0px_0px_#FFB800] rotate-[0.5deg] hover:rotate-0 transition-transform">
+            <div className="bg-white border-2 border-[#15120E] rounded-[6px_16px_5px_15px] p-7 relative shadow-[4px_4px_0px_0px_#FFB800] rotate-[0.5deg] hover:rotate-0 transition-transform">
               <div className="flex items-center justify-between mb-3 pb-2 border-b border-[#F3F1EA]">
                 <span className="text-xs font-bold uppercase tracking-wider text-[#15120E]">
                   Treatment: Identical Robot With QRAEMON
@@ -194,7 +194,7 @@ export function ValidationSection() {
           </div>
 
           {/* Interactive Benchmark Tasks Inspector */}
-          <div className="border border-[#E8DFC8] bg-white rounded-md p-5 sm:p-6">
+          <div className="border border-[#E8DFC8] bg-white rounded-md p-6 sm:p-8">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-5">
               <span className="text-xs font-bold text-[#15120E] uppercase tracking-wider">
                 Select Benchmark Task Scenario:
@@ -216,7 +216,7 @@ export function ValidationSection() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-3 border-t border-[#F3F1EA] text-xs">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-7 pt-5 border-t border-[#F3F1EA] text-xs">
               <div>
                 <span className="text-[11px] font-mono text-[#8A8275] block uppercase">Task Description</span>
                 <p className="font-bold text-[#15120E] mt-0.5">{benchmarkTasks[selectedTask].name}</p>

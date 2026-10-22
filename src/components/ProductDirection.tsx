@@ -16,11 +16,11 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
   ];
 
   return (
-    <section id="products" className="py-20 md:py-28 border-t border-[#D8D2C2]/70 relative">
+    <section id="products" className="py-24 md:py-32 border-t border-[#D8D2C2]/70 relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mb-20">
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#8A8275] mb-3">
             <span>03 · Product Direction</span>
             <span aria-hidden="true" className="text-[#BAAF96]">·</span>
@@ -37,7 +37,7 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
         </div>
 
         {/* The Two Product Cards with Asymmetric Tilts & Offset Sketch Layers */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
           
           {/* Product A: QRAEMON Software */}
           <div className="relative">
@@ -45,7 +45,7 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
               className="absolute inset-0 bg-[#E8DFC8] border border-[#D8D2C2] rounded-[18px_6px_16px_8px] -rotate-1 translate-x-1 translate-y-2 pointer-events-none"
               aria-hidden="true"
             />
-            <div className="relative bg-[#FAF8F3] border-1.5 border-[#15120E] rounded-[16px_5px_15px_6px] p-7 sm:p-8 flex flex-col justify-between shadow-[3px_3px_0px_0px_#15120E] -rotate-[0.6deg] hover:rotate-0 transition-transform h-full">
+            <div className="relative bg-[#FAF8F3] border-1.5 border-[#15120E] rounded-[16px_5px_15px_6px] p-8 sm:p-10 flex flex-col justify-between shadow-[3px_3px_0px_0px_#15120E] -rotate-[0.6deg] hover:rotate-0 transition-transform h-full">
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#8A8275] bg-white px-2 py-0.5 rounded-[4px_2px_5px_2px] border border-[#E8DFC8]">
@@ -63,7 +63,7 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
                   A deployable cognitive runtime operating above a robot&apos;s existing control stack. Integrates with existing industrial PCs, research workstations, or edge boxes via a clean adapter layer.
                 </p>
 
-                <div className="space-y-3 pt-2 border-t border-[#E8DFC8]">
+                <div className="space-y-4 pt-4 border-t border-[#E8DFC8]">
                   <div className="flex items-start gap-3 text-xs text-[#554E44]">
                     <Check className="w-4 h-4 text-[#FFB800] shrink-0 mt-0.5" />
                     <span><strong>Zero hardware replacement:</strong> Runs alongside existing robot controllers without altering warranty or physical actuation loops.</span>
@@ -102,7 +102,7 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
               className="absolute inset-0 bg-[#E8DFC8] border border-[#D8D2C2] rounded-[6px_18px_8px_16px] rotate-1 translate-x-1 translate-y-2 pointer-events-none"
               aria-hidden="true"
             />
-            <div className="relative bg-[#FAF8F3] border-1.5 border-[#15120E] rounded-[5px_16px_6px_15px] p-7 sm:p-8 flex flex-col justify-between shadow-[3px_3px_0px_0px_#15120E] rotate-[0.7deg] hover:rotate-0 transition-transform h-full">
+            <div className="relative bg-[#FAF8F3] border-1.5 border-[#15120E] rounded-[5px_16px_6px_15px] p-8 sm:p-10 flex flex-col justify-between shadow-[3px_3px_0px_0px_#15120E] rotate-[0.7deg] hover:rotate-0 transition-transform h-full">
               <div>
                 <div className="flex items-center justify-between mb-4">
                   <span className="text-xs font-mono font-bold uppercase tracking-widest text-[#8A8275] bg-white px-2 py-0.5 rounded-[4px_2px_5px_2px] border border-[#E8DFC8]">
@@ -120,7 +120,7 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
                   The onboard physical embodiment of the cognitive runtime. A self-contained module with dedicated compute, transactional persistent storage, hardware security, and industrial I/O.
                 </p>
 
-                <div className="space-y-3 pt-2 border-t border-[#E8DFC8]">
+                <div className="space-y-4 pt-4 border-t border-[#E8DFC8]">
                   <div className="flex items-start gap-3 text-xs text-[#554E44]">
                     <Check className="w-4 h-4 text-[#FFB800] shrink-0 mt-0.5" />
                     <span><strong>100% Offline-First Operation:</strong> Zero cloud dependency for the real-time cognitive loop; operates reliably in air-gapped industrial cleanrooms.</span>
@@ -156,7 +156,7 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
         </div>
 
         {/* Technical Architecture Comparison Table */}
-        <div className="bg-white border border-[#D8D2C2] rounded-md p-6 sm:p-8">
+        <div className="bg-white border border-[#D8D2C2] rounded-md p-7 sm:p-10">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-4 border-b border-[#E8DFC8] gap-2 mb-4">
             <div>
               <h3 className="text-base font-bold text-[#15120E]">
@@ -179,9 +179,9 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
               <tbody className="divide-y divide-[#F3F1EA]">
                 {comparisonItems.map((item) => (
                   <tr key={item.dimension} className="hover:bg-[#FAF8F3]/60 transition-colors">
-                    <td className="py-3 font-semibold text-[#15120E] pr-4">{item.dimension}</td>
-                    <td className="py-3 text-[#554E44] pr-4">{item.software}</td>
-                    <td className="py-3 text-[#554E44]">{item.embedded}</td>
+                    <td className="py-4 font-semibold text-[#15120E] pr-4">{item.dimension}</td>
+                    <td className="py-4 text-[#554E44] pr-4">{item.software}</td>
+                    <td className="py-4 text-[#554E44]">{item.embedded}</td>
                   </tr>
                 ))}
               </tbody>
