@@ -2,7 +2,7 @@ import { AlertOctagon, RotateCw, Wrench, Clock, DollarSign, CheckCircle2 } from 
 
 export function ProblemSection() {
   return (
-    <section id="problem" className="py-20 md:py-28 border-t border-[#D8D2C2]/70 relative">
+    <section id="problem" className="py-20 md:py-28 relative">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}

@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Menu, X, ArrowUpRight } from 'lucide-react';
-import { QraemonLogo } from './QraemonLogo';
+import logoImage from '../../logo_logo.png';
+import wordmarkImage from '../../wordmark_logo.png';
 
 interface NavbarProps {
   onOpenContact: (mode?: string) => void;
@@ -8,6 +9,27 @@ interface NavbarProps {
 
 export function Navbar({ onOpenContact }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    let previousScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      const scrollDelta = currentScrollY - previousScrollY;
+
+      if (currentScrollY <= 20 || scrollDelta < -4 || mobileMenuOpen) {
+        setVisible(true);
+      } else if (scrollDelta > 4) {
+        setVisible(false);
+      }
+
+      previousScrollY = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [mobileMenuOpen]);
 
   const navLinks = [
     { label: 'Problem', href: '#problem' },
@@ -20,7 +42,11 @@ export function Navbar({ onOpenContact }: NavbarProps) {
   ];
 
   return (
-    <header className="sticky top-0 z-40 bg-[#F3F1EA]/90 backdrop-blur-md border-b border-[#D8D2C2]/60">
+    <header className={`sticky top-4 z-40 mx-4 md:mx-8 rounded-full bg-[#F3F1EA]/90 backdrop-blur-md border border-[#D8D2C2]/60 shadow-md transition-[transform,opacity] duration-300 ease-out ${
+      visible || mobileMenuOpen
+        ? 'translate-y-0 opacity-100'
+        : '-translate-y-[calc(100%+1rem)] opacity-0 pointer-events-none'
+    }`}>
       <div className="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between gap-8">
         
         {/* Zone 1: Single wordmark lockup */}
@@ -28,8 +54,8 @@ export function Navbar({ onOpenContact }: NavbarProps) {
           href="#"
           className="flex items-center gap-3 text-lg font-bold tracking-tight text-[#15120E] whitespace-nowrap shrink-0 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#FFB800] rounded-sm py-1"
         >
-          <QraemonLogo size={28} />
-          <span className="font-extrabold tracking-widest text-[19px]">QRAEMON</span>
+          <img src={logoImage} alt="" className="h-9 w-9 sm:h-11 sm:w-11 md:h-12 md:w-12 object-contain" />
+          <img src={wordmarkImage} alt="QRAEMON" className="h-auto w-28 object-contain" />
         </a>
 
         {/* Zone 2: Concise single-line navigation links */}
@@ -52,10 +78,12 @@ export function Navbar({ onOpenContact }: NavbarProps) {
         <div className="hidden md:flex items-center gap-3 shrink-0">
           <button
             onClick={() => onOpenContact('pilot')}
-            className="flex items-center gap-2 px-4.5 py-2 text-xs font-semibold uppercase tracking-wider text-[#15120E] bg-[#FFB800] hover:bg-[#e6a600] active:translate-y-0.5 rounded-sm transition-all shadow-xs focus:outline-none focus-visible:ring-2 focus-visible:ring-[#15120E] whitespace-nowrap shrink-0"
+            className="flex items-center gap-3 pl-4 pr-1.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#15120E] hover:bg-[#302b25] active:translate-y-0.5 rounded-full transition-all shadow-xs focus:outline-none focus-visible:ring-2 focus-visible:ring-[#15120E] whitespace-nowrap shrink-0"
           >
             <span>Discuss a Pilot</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
+            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#FFB800] text-[#15120E]">
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </span>
           </button>
         </div>
 
@@ -90,10 +118,12 @@ export function Navbar({ onOpenContact }: NavbarProps) {
                 setMobileMenuOpen(false);
                 onOpenContact('pilot');
               }}
-              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-semibold uppercase tracking-wider text-[#15120E] bg-[#FFB800] hover:bg-[#e6a600] rounded-sm transition-colors"
+              className="w-full flex items-center justify-between gap-3 pl-4 pr-1.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#15120E] hover:bg-[#302b25] rounded-full transition-colors"
             >
               <span>Discuss a Pilot</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#FFB800] text-[#15120E]">
+                <ArrowUpRight className="w-3.5 h-3.5" />
+              </span>
             </button>
           </div>
         </div>
