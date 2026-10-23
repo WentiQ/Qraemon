@@ -63,7 +63,7 @@ export function Hero({ onOpenContact }: HeroProps) {
             </h1>
 
             <p className="mx-auto max-w-2xl text-lg sm:text-xl text-[#443E37] leading-relaxed font-normal">
-              QRAEMON is developing a robot-agnostic cognitive layer: a persistent experience system that sits above existing control stacks, enabling machines to keep, reuse, and improve what they learn on the job.
+              QRAEZEV is developing a robot-agnostic cognitive layer: a persistent experience system that sits above existing control stacks, enabling machines to keep, reuse, and improve what they learn on the job.
             </p>
 
             <div className="pt-2 flex flex-wrap items-center justify-center gap-4">

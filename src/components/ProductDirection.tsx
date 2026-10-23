@@ -39,7 +39,7 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
         {/* The Two Product Cards with Asymmetric Tilts & Offset Sketch Layers */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
           
-          {/* Product A: QRAEMON Software */}
+          {/* Product A: QRAEZEV Software */}
           <div className="relative">
             <div 
               className="absolute inset-0 bg-[#E8DFC8] border border-[#D8D2C2] rounded-[18px_6px_16px_8px] -rotate-1 translate-x-1 translate-y-2 pointer-events-none"
@@ -57,7 +57,7 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
                 </div>
 
                 <h3 className="text-2xl font-extrabold text-[#15120E] mb-2">
-                  QRAEMON Software
+                  QRAEZEV Software
                 </h3>
                 <p className="text-sm text-[#443E37] leading-relaxed mb-6">
                   A deployable cognitive runtime operating above a robot&apos;s existing control stack. Integrates with existing industrial PCs, research workstations, or edge boxes via a clean adapter layer.
@@ -96,7 +96,7 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
             </div>
           </div>
 
-          {/* Product B: QRAEMON Embedded */}
+          {/* Product B: QRAEZEV Embedded */}
           <div className="relative">
             <div 
               className="absolute inset-0 bg-[#E8DFC8] border border-[#D8D2C2] rounded-[6px_18px_8px_16px] rotate-1 translate-x-1 translate-y-2 pointer-events-none"
@@ -114,7 +114,7 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
                 </div>
 
                 <h3 className="text-2xl font-extrabold text-[#15120E] mb-2">
-                  QRAEMON Embedded
+                  QRAEZEV Embedded
                 </h3>
                 <p className="text-sm text-[#443E37] leading-relaxed mb-6">
                   The onboard physical embodiment of the cognitive runtime. A self-contained module with dedicated compute, transactional persistent storage, hardware security, and industrial I/O.
@@ -162,7 +162,7 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
               <h3 className="text-base font-bold text-[#15120E]">
                 Architectural Alignment Matrix
               </h3>
-              <p className="text-xs text-[#6B6358]">Comparing QRAEMON Software and QRAEMON Embedded implementation details</p>
+              <p className="text-xs text-[#6B6358]">Comparing QRAEZEV Software and QRAEZEV Embedded implementation details</p>
             </div>
             <span className="text-xs font-mono text-[#8A8275]">Specification Version 1.0</span>
           </div>
@@ -172,8 +172,8 @@ export function ProductDirection({ onOpenContact }: ProductDirectionProps) {
               <thead>
                 <tr className="border-b border-[#E8DFC8] text-[#8A8275]">
                   <th className="py-2.5 font-medium">Dimension</th>
-                  <th className="py-2.5 font-medium text-[#15120E]">QRAEMON Software</th>
-                  <th className="py-2.5 font-medium text-[#15120E]">QRAEMON Embedded</th>
+                  <th className="py-2.5 font-medium text-[#15120E]">QRAEZEV Software</th>
+                  <th className="py-2.5 font-medium text-[#15120E]">QRAEZEV Embedded</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#F3F1EA]">

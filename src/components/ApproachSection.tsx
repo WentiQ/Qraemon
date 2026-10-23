@@ -76,13 +76,13 @@ export function ApproachSection() {
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#8A8275] mb-3">
             <span>02 · The Cognitive Layer</span>
             <span aria-hidden="true" className="text-[#BAAF96]">·</span>
-            <span>How QRAEMON Operates</span>
+            <span>How QRAEZEV Operates</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#15120E] tracking-tight leading-tight text-balance">
             Observe. Remember. Reason. Act. Learn.
           </h2>
           <p className="mt-4 text-lg text-[#443E37] leading-relaxed">
-            QRAEMON does not replace the robot&apos;s physical controller. It introduces a persistent cognitive loop above it—evaluating every trial, forming structured memories, and converting operational experience into measurably better future decisions.
+            QRAEZEV does not replace the robot&apos;s physical controller. It introduces a persistent cognitive loop above it—evaluating every trial, forming structured memories, and converting operational experience into measurably better future decisions.
           </p>
         </div>
 
@@ -190,7 +190,7 @@ export function ApproachSection() {
                 <span className="text-xs font-mono text-[#8A8275] bg-[#FAF8F3] px-2 py-0.5 rounded-[4px_2px_5px_2px] border border-[#E8DFC8]">Active Management</span>
               </div>
               <p className="text-xs text-[#554E44] mb-6 leading-relaxed">
-                Robots generate vast streams of high-bandwidth sensor feeds. Indiscriminate logging floods storage and slows retrieval. QRAEMON manages memory as a selective lifecycle:
+                Robots generate vast streams of high-bandwidth sensor feeds. Indiscriminate logging floods storage and slows retrieval. QRAEZEV manages memory as a selective lifecycle:
               </p>
 
               <div className="space-y-4">
@@ -217,7 +217,7 @@ export function ApproachSection() {
               </div>
 
               <div className="mt-5 p-3 bg-[#FFF8E7] border border-[#FFD875] rounded-[6px_3px_7px_4px] text-xs text-[#6B6358]">
-                <strong className="text-[#15120E]">Selective Forgetting:</strong> Just as biological nervous systems prune insignificant synapses, QRAEMON bounds memory footprint by consolidating repeated experiences into compact rules.
+                <strong className="text-[#15120E]">Selective Forgetting:</strong> Just as biological nervous systems prune insignificant synapses, QRAEZEV bounds memory footprint by consolidating repeated experiences into compact rules.
               </div>
             </div>
           </div>

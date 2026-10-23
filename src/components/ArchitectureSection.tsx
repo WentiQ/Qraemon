@@ -7,7 +7,7 @@ export function ArchitectureSection() {
   const planes = {
     cognitive: {
       name: 'Cognitive Plane',
-      owner: 'QRAEMON Runtime',
+      owner: 'QRAEZEV Runtime',
       responsibilities: 'Context fusion, episodic experience retrieval, reasoning over candidate strategies, task-level planning, outcome evaluation, and memory consolidation.',
       timing: 'Task-dependent / Asynchronous (50ms–500ms explicit budget)',
       safetyAuthority: 'Non-authoritative. Proposes bounded actions; cannot force physical execution.',
@@ -32,7 +32,7 @@ export function ArchitectureSection() {
   };
 
   const actionGuardPipeline = [
-    { step: '1. A_requested', desc: 'QRAEMON outputs candidate skill command (e.g. INSERT)' },
+    { step: '1. A_requested', desc: 'QRAEZEV outputs candidate skill command (e.g. INSERT)' },
     { step: '2. Schema Validation', desc: 'Validates typing, mandatory parameters, and coordinate frame sanity' },
     { step: '3. Capability Check', desc: 'Verifies robot adapter registers support for the requested action' },
     { step: '4. Constraint Check', desc: 'Checks velocity, acceleration, workspace bounding box, and force limits' },
@@ -57,7 +57,7 @@ export function ArchitectureSection() {
             Deterministic safety boundary.
           </h2>
           <p className="mt-4 text-lg text-[#443E37] leading-relaxed">
-            QRAEMON is fundamentally designed not to be a servo controller or emergency-stop replacement. It operates above the physical control stack, proposing bounded skills through a strict safety gateway that can reject or override any cognitive plan.
+            QRAEZEV is fundamentally designed not to be a servo controller or emergency-stop replacement. It operates above the physical control stack, proposing bounded skills through a strict safety gateway that can reject or override any cognitive plan.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export function ArchitectureSection() {
               </h3>
             </div>
             <span className="text-xs text-[#6B6358] font-mono">
-              Sensors → Context → QRAEMON → Safety Gateway → Controller → Actuators
+              Sensors → Context → QRAEZEV → Safety Gateway → Controller → Actuators
             </span>
           </div>
 
@@ -103,13 +103,13 @@ export function ArchitectureSection() {
               <ArrowDown className="w-5 h-5 animate-bounce" />
             </div>
 
-            {/* Core Box: QRAEMON Cognitive Layer with Offset Sketch Border & Slight Tilt */}
+            {/* Core Box: QRAEZEV Cognitive Layer with Offset Sketch Border & Slight Tilt */}
             <div className="p-6 bg-white border-2 border-[#15120E] rounded-[16px_6px_15px_7px] shadow-[4px_4px_0px_0px_#FFB800] relative -rotate-[0.3deg] hover:rotate-0 transition-transform">
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pb-3 mb-4 border-b border-[#E8DFC8]">
                 <div className="flex items-center gap-3">
                   <div className="w-3.5 h-3.5 rounded-full bg-[#FFB800] ring-2 ring-[#15120E]" />
                   <h4 className="text-base font-extrabold text-[#15120E]">
-                    QRAEMON Cognitive Layer (Runtime Core)
+                    QRAEZEV Cognitive Layer (Runtime Core)
                   </h4>
                 </div>
                 <span className="text-xs font-mono font-medium text-[#15120E] bg-[#FFF8E7] px-2.5 py-0.5 rounded-[4px_2px_5px_2px] border border-[#FFD875] -rotate-1">
@@ -167,7 +167,7 @@ export function ArchitectureSection() {
                   <span className="text-[10px] font-mono text-[#8A8275] bg-[#FAF8F3] px-2 py-0.5 rounded border border-[#E8DFC8]">1kHz Closed-Loop</span>
                 </div>
                 <p className="text-xs text-[#554E44] leading-relaxed">
-                  Translates authorized QRAEMON actions into manufacturer-specific commands (URScript, KUKA KRL, RAPID, ROS 2) directly driving physical actuators.
+                  Translates authorized QRAEZEV actions into manufacturer-specific commands (URScript, KUKA KRL, RAPID, ROS 2) directly driving physical actuators.
                 </p>
               </div>
 
@@ -179,7 +179,7 @@ export function ArchitectureSection() {
                 <span className="w-2 h-2 rounded-full bg-[#FFB800]" />
                 Outcome Feedback Return Loop:
               </span>
-              <span>Physical outcome (success, slip, jam, recovery) flows back to QRAEMON for consolidation into persistent memory.</span>
+              <span>Physical outcome (success, slip, jam, recovery) flows back to QRAEZEV for consolidation into persistent memory.</span>
             </div>
 
           </div>
@@ -197,7 +197,7 @@ export function ArchitectureSection() {
               <span className="text-xs font-mono text-[#8A8275]">Zero-Bypass Policy</span>
             </div>
             <p className="text-xs text-[#554E44] mb-5 leading-relaxed">
-              Every action proposed by QRAEMON must pass through an explicit validation sequence before actuation signals are generated:
+              Every action proposed by QRAEZEV must pass through an explicit validation sequence before actuation signals are generated:
             </p>
 
             <div className="space-y-4">
@@ -213,7 +213,7 @@ export function ArchitectureSection() {
             </div>
 
             <div className="mt-5 p-3 bg-[#FDF2F2] border border-[#F5C2C2] rounded text-xs text-[#991B1B]">
-              <strong>Engineering Guarantee:</strong> If QRAEMON experiences a timeout, internal exception, or memory stall, the existing robot controller halts gracefully or defaults to deterministic behavior.
+              <strong>Engineering Guarantee:</strong> If QRAEZEV experiences a timeout, internal exception, or memory stall, the existing robot controller halts gracefully or defaults to deterministic behavior.
             </div>
           </div>
 

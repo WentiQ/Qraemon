@@ -70,7 +70,7 @@ export function ContactSection({ initialMode }: ContactSectionProps) {
                   &ldquo;What happens when your robot encounters a failure it has seen before?&rdquo;
                 </blockquote>
                 <p className="text-xs text-[#554E44] mt-3 leading-relaxed">
-                  If the answer is &ldquo;an operator resets the cell&rdquo; or &ldquo;an engineer modifies the script,&rdquo; your workcell represents the exact beachhead problem QRAEMON is built to solve.
+                  If the answer is &ldquo;an operator resets the cell&rdquo; or &ldquo;an engineer modifies the script,&rdquo; your workcell represents the exact beachhead problem QRAEZEV is built to solve.
                 </p>
               </div>
             </div>
@@ -124,7 +124,7 @@ export function ContactSection({ initialMode }: ContactSectionProps) {
             </div>
 
             <div className="p-4 bg-[#FAF8F3] border border-[#E8DFC8] rounded-[8px_4px_9px_5px] text-xs text-[#6B6358] leading-relaxed">
-              <strong>Pilot Availability Notice:</strong> QRAEMON is in active R&D. Early design partner slots are limited to controlled manipulation setups and simulation co-validations.
+              <strong>Pilot Availability Notice:</strong> QRAEZEV is in active R&D. Early design partner slots are limited to controlled manipulation setups and simulation co-validations.
             </div>
 
           </div>

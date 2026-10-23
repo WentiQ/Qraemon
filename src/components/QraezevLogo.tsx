@@ -1,11 +1,11 @@
-interface QraemonLogoProps {
+interface QraezevLogoProps {
   className?: string;
   size?: number;
   monochrome?: boolean;
 }
 
-export function QraemonLogo({ className = '', size = 32, monochrome = false }: QraemonLogoProps) {
-  // Renders the distinctive QRAEMON dual concentric split-ring mark
+export function QraezevLogo({ className = '', size = 32, monochrome = false }: QraezevLogoProps) {
+  // Renders the distinctive QRAEZEV dual concentric split-ring mark
   const goldColor = monochrome ? '#15120E' : '#FFB800';
   const blueColor = monochrome ? '#443E37' : '#1D63ED';
 
@@ -17,7 +17,7 @@ export function QraemonLogo({ className = '', size = 32, monochrome = false }: Q
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={`shrink-0 ${className}`}
-      aria-label="QRAEMON emblem"
+      aria-label="QRAEZEV emblem"
     >
       {/* Outer top-right arc (Gold) */}
       <path

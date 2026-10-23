@@ -105,7 +105,7 @@ export function ProblemSection() {
           </div>
 
           <div className="mt-6 pt-4 border-t border-[#E8DFC8] flex items-center justify-between text-xs text-[#8A8275]">
-            <span className="italic">Visual reference from QRAEMON engineering brief. Each gold mark represents an unrecovered physical failure.</span>
+            <span className="italic">Visual reference from QRAEZEV engineering brief. Each gold mark represents an unrecovered physical failure.</span>
             <span className="font-mono text-[#15120E] font-medium">Memory is absent; reprogramming is recurring.</span>
           </div>
         </div>
@@ -154,12 +154,12 @@ export function ProblemSection() {
             </div>
           </div>
 
-          {/* Workflow B: QRAEMON Experience Loop */}
+          {/* Workflow B: QRAEZEV Experience Loop */}
           <div className="bg-white border-2 border-[#15120E] rounded-[6px_16px_5px_15px] p-7 sm:p-8 relative shadow-[4px_4px_0px_0px_#FFB800] rotate-[0.5deg] hover:rotate-0 transition-transform">
             <div className="flex items-center justify-between mb-4 pb-2 border-b border-[#F3F1EA]">
               <span className="text-xs font-bold uppercase tracking-wider text-[#15120E] flex items-center gap-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-[#FFB800]" />
-                QRAEMON Hypothesis · Experience Loop
+                QRAEZEV Hypothesis · Experience Loop
               </span>
               <span className="text-[11px] font-semibold text-[#15120E] bg-[#FFB800] px-2 py-0.5 rounded-[3px_5px_2px_4px]">Autonomous</span>
             </div>
@@ -174,7 +174,7 @@ export function ProblemSection() {
               </div>
               <div className="flex items-center gap-3 text-xs p-2.5 rounded-[4px_6px_3px_5px] bg-[#FAF8F3] border border-[#E8DFC8]">
                 <div className="w-6 h-6 rounded-full bg-[#FFB800] text-[#15120E] font-mono font-bold flex items-center justify-center shrink-0">2</div>
-                <div><span className="font-semibold text-[#15120E]">QRAEMON recalls relevant past episodes</span> & failure modes</div>
+                <div><span className="font-semibold text-[#15120E]">QRAEZEV recalls relevant past episodes</span> & failure modes</div>
               </div>
               <div className="flex items-center gap-3 text-xs p-2.5 rounded-[6px_3px_5px_4px] bg-[#FAF8F3] border border-[#E8DFC8]">
                 <div className="w-6 h-6 rounded-full bg-[#FFB800] text-[#15120E] font-mono font-bold flex items-center justify-center shrink-0">3</div>

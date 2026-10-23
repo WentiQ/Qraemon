@@ -9,7 +9,7 @@ export function ValidationSection() {
       name: 'Precision Peg-in-Hole Insertion',
       variation: '±4mm horizontal positional shift, 0.5° angular tilt, variable friction',
       baselineFailure: '80% repeated jam rate (fails 8 out of 10 times without human reset)',
-      qraemonTarget: '50% reduction in failed trials (adapts lateral offset by Trial 2)',
+      qraezevTarget: '50% reduction in failed trials (adapts lateral offset by Trial 2)',
       dieFormula: 'DIE = P(success | experience) - P(success | baseline) = +0.50 target',
       primarySensor: 'Wrist-mounted F/T + eye-in-hand RGB-D',
     },
@@ -17,7 +17,7 @@ export function ValidationSection() {
       name: 'Flexible Harness Routing',
       variation: 'Non-rigid deformation, spring-back tension, variable clasp grip',
       baselineFailure: 'High slip rate; unable to predict elastic counter-torque',
-      qraemonTarget: 'Recalls tension compensation angle from past deformation episodes',
+      qraezevTarget: 'Recalls tension compensation angle from past deformation episodes',
       dieFormula: 'DIE = +0.42 recovery improvement across unmodeled flex variations',
       primarySensor: 'Joint effort telemetry + tactile array',
     },
@@ -25,7 +25,7 @@ export function ValidationSection() {
       name: 'Irregular Surface Bin Sorting',
       variation: 'Reflective packaging, random orientations, overlap occlusion',
       baselineFailure: 'Repeated suction failure on wrinkled foil surfaces',
-      qraemonTarget: 'Recalls alternative grasp angles proven on identical SKU reflections',
+      qraezevTarget: 'Recalls alternative grasp angles proven on identical SKU reflections',
       dieFormula: 'DIE = +0.55 first-pass pickup yield after initial slip episode',
       primarySensor: 'Overhead 3D point-cloud + vacuum differential gauge',
     },
@@ -81,7 +81,7 @@ export function ValidationSection() {
             Measured against a no-memory baseline.
           </h2>
           <p className="mt-4 text-lg text-[#443E37] leading-relaxed">
-            QRAEMON does not rely on marketing claims or cherry-picked robotics demonstrations. We measure every innovation against an identical no-memory control system under strictly matched physical and computational conditions.
+            QRAEZEV does not rely on marketing claims or cherry-picked robotics demonstrations. We measure every innovation against an identical no-memory control system under strictly matched physical and computational conditions.
           </p>
         </div>
 
@@ -137,7 +137,7 @@ export function ValidationSection() {
             <div className="bg-white border-1.5 border-[#15120E]/30 rounded-[14px_5px_16px_6px] p-7 relative shadow-[3px_3px_0px_0px_rgba(21,18,14,0.06)] -rotate-[0.4deg] hover:rotate-0 transition-transform">
               <div className="flex items-center justify-between mb-3 pb-2 border-b border-[#F3F1EA]">
                 <span className="text-xs font-bold uppercase tracking-wider text-[#6B6358]">
-                  Control: Identical Robot Without QRAEMON
+                  Control: Identical Robot Without QRAEZEV
                 </span>
                 <span className="text-[11px] font-mono text-[#8A8275] bg-[#FAF8F3] px-2 py-0.5 rounded border border-[#E8DFC8]">Baseline</span>
               </div>
@@ -165,7 +165,7 @@ export function ValidationSection() {
             <div className="bg-white border-2 border-[#15120E] rounded-[6px_16px_5px_15px] p-7 relative shadow-[4px_4px_0px_0px_#FFB800] rotate-[0.5deg] hover:rotate-0 transition-transform">
               <div className="flex items-center justify-between mb-3 pb-2 border-b border-[#F3F1EA]">
                 <span className="text-xs font-bold uppercase tracking-wider text-[#15120E]">
-                  Treatment: Identical Robot With QRAEMON
+                  Treatment: Identical Robot With QRAEZEV
                 </span>
                 <span className="text-[11px] font-mono text-[#15120E] bg-[#FFB800] px-2 py-0.5 rounded-[3px_5px_2px_4px]">
                   Memory-Enabled
@@ -230,8 +230,8 @@ export function ValidationSection() {
                   <p className="text-[#554E44] text-[11px]">{benchmarkTasks[selectedTask].baselineFailure}</p>
                 </div>
                 <div>
-                  <span className="text-[10px] font-mono uppercase text-[#15120E] font-bold">QRAEMON Target Metric:</span>
-                  <p className="text-[#15120E] font-semibold text-[11px]">{benchmarkTasks[selectedTask].qraemonTarget}</p>
+                  <span className="text-[10px] font-mono uppercase text-[#15120E] font-bold">QRAEZEV Target Metric:</span>
+                  <p className="text-[#15120E] font-semibold text-[11px]">{benchmarkTasks[selectedTask].qraezevTarget}</p>
                 </div>
                 <div className="pt-2 border-t border-[#E8DFC8] font-mono text-[11px] text-[#15120E]">
                   {benchmarkTasks[selectedTask].dieFormula}
@@ -240,7 +240,7 @@ export function ValidationSection() {
             </div>
 
             <div className="mt-4 pt-3 border-t border-[#E8DFC8] text-[11px] text-[#8A8275] italic">
-              Note: Initial targets represent research hypotheses to be experimentally proven in simulation and physical test cells. QRAEMON does not publish invented or unverified laboratory outcomes.
+              Note: Initial targets represent research hypotheses to be experimentally proven in simulation and physical test cells. QRAEZEV does not publish invented or unverified laboratory outcomes.
             </div>
           </div>
 

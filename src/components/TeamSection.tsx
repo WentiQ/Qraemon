@@ -49,7 +49,7 @@ export function TeamSection() {
             Two builders. One mission.
           </h2>
           <p className="mt-4 text-lg text-[#443E37] leading-relaxed">
-            QRAEMON is founded by two interdisciplinary engineers uniting physical robot systems and artificial cognitive architecture to solve deployed machine learning.
+            QRAEZEV is founded by two interdisciplinary engineers uniting physical robot systems and artificial cognitive architecture to solve deployed machine learning.
           </p>
         </div>
 

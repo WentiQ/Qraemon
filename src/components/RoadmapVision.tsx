@@ -149,7 +149,7 @@ export function RoadmapVision() {
                   Stable Cognition. Replaceable Embodiment.
                 </h3>
                 <p className="text-xs text-[#443E37] leading-relaxed mt-2">
-                  Today, when robot hardware changes or reaches end-of-life, the software and learned behaviors are discarded and re-engineered. QRAEMON&apos;s ultimate vision is one persistent cognitive architecture that survives changes in mechanical bodies, sensors, and actuators.
+                  Today, when robot hardware changes or reaches end-of-life, the software and learned behaviors are discarded and re-engineered. QRAEZEV&apos;s ultimate vision is one persistent cognitive architecture that survives changes in mechanical bodies, sensors, and actuators.
                 </p>
               </div>
 
@@ -187,7 +187,7 @@ export function RoadmapVision() {
             <p className="italic">
               &ldquo;A robot should not have to experience the same failure twice.&rdquo;
             </p>
-            <span className="font-mono text-[#15120E] font-medium">QRAEMON Architectural Thesis</span>
+            <span className="font-mono text-[#15120E] font-medium">QRAEZEV Architectural Thesis</span>
           </div>
         </div>
       </div>

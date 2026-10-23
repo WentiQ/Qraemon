@@ -16,7 +16,7 @@ export function Footer() {
           <div className="md:col-span-5 space-y-6">
             <div className="flex items-center gap-3">
               <img src="/assets/images/logo_logo_W.png" alt="" className="h-8 w-8 object-contain" />
-              <img src="/assets/images/wordmark_w.png" alt="QRAEMON" className="h-auto w-28 object-contain" />
+              <img src="/assets/images/wordmark_w.png" alt="QRAEZEV" className="h-auto w-28 object-contain" />
             </div>
             
             <p className="text-sm text-[#D8D2C2] leading-relaxed max-w-sm">
@@ -101,10 +101,10 @@ export function Footer() {
         {/* Disclaimer & Copyright */}
         <div className="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] text-[#B9B2A5]">
           <p className="max-w-2xl leading-relaxed">
-            <strong>Research Notice:</strong> QRAEMON is in early-stage research and development. Technical architectures, benchmark hypotheses, and deployment specifications represent engineering directions under active validation.
+            <strong>Research Notice:</strong> QRAEZEV is in early-stage research and development. Technical architectures, benchmark hypotheses, and deployment specifications represent engineering directions under active validation.
           </p>
           <div className="whitespace-nowrap shrink-0">
-            © 2026 QRAEMON. All rights reserved.
+            © 2026 QRAEZEV. All rights reserved.
           </div>
         </div>
 

@@ -35,7 +35,7 @@ export default function App() {
         {/* Section 2: The Problem */}
         <ProblemSection />
 
-        {/* Section 3: The QRAEMON Approach (Cognitive Loop & Memory Lifecycle) */}
+        {/* Section 3: The QRAEZEV Approach (Cognitive Loop & Memory Lifecycle) */}
         <ApproachSection />
 
         {/* Section 4: Product Direction (Software vs Embedded) */}
