@@ -73,7 +73,7 @@ export function TeamSection() {
                   <img
                     src={founder.image}
                     alt={founder.name}
-                    className="aspect-[4/3] w-full shrink-0 rounded-[12px_4px_14px_6px] border border-[#D8D2C2] object-cover object-center md:aspect-auto md:w-[36%]"
+                    className="photo aspect-[4/3] w-full shrink-0 rounded-[12px_4px_14px_6px] border border-[#D8D2C2] object-cover object-center md:aspect-auto md:w-[36%]"
                   />
 
                   <div className="flex min-w-0 flex-1 flex-col justify-between">

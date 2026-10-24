@@ -76,7 +76,7 @@ export function Navbar({ onOpenContact }: NavbarProps) {
         <div className="hidden md:flex items-center gap-3 shrink-0">
           <button
             onClick={() => onOpenContact('pilot')}
-            className="flex items-center gap-3 pl-4 pr-1.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#15120E] hover:bg-[#302b25] active:translate-y-0.5 rounded-full transition-all shadow-xs focus:outline-none focus-visible:ring-2 focus-visible:ring-[#15120E] whitespace-nowrap shrink-0"
+            className="pilot-cta flex items-center gap-3 pl-4 pr-1.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#15120E] hover:bg-[#302b25] active:translate-y-0.5 rounded-full transition-all shadow-xs focus:outline-none focus-visible:ring-2 focus-visible:ring-[#15120E] whitespace-nowrap shrink-0"
           >
             <span>Discuss a Pilot</span>
             <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#FFB800] text-[#15120E]">
@@ -116,7 +116,7 @@ export function Navbar({ onOpenContact }: NavbarProps) {
                 setMobileMenuOpen(false);
                 onOpenContact('pilot');
               }}
-              className="w-full flex items-center justify-between gap-3 pl-4 pr-1.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#15120E] hover:bg-[#302b25] rounded-full transition-colors"
+              className="pilot-cta w-full flex items-center justify-between gap-3 pl-4 pr-1.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-white bg-[#15120E] hover:bg-[#302b25] rounded-full transition-colors"
             >
               <span>Discuss a Pilot</span>
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#FFB800] text-[#15120E]">

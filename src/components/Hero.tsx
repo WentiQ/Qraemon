@@ -69,7 +69,7 @@ export function Hero({ onOpenContact }: HeroProps) {
             <div className="pt-2 flex flex-wrap items-center justify-center gap-4">
               <button
                 onClick={() => onOpenContact('pilot')}
-                className="relative inline-flex items-center justify-center gap-3 pl-6 pr-2 py-2 text-sm font-bold uppercase tracking-wider text-white bg-[#15120E] hover:bg-[#302b25] active:translate-y-0.5 rounded-full shadow-[3px_3px_0px_0px_#15120E] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#15120E]"
+                className="pilot-cta relative inline-flex items-center justify-center gap-3 pl-6 pr-2 py-2 text-sm font-bold uppercase tracking-wider text-white bg-[#15120E] hover:bg-[#302b25] active:translate-y-0.5 rounded-full shadow-[3px_3px_0px_0px_#15120E] transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-[#15120E]"
               >
                 <span>Discuss a Pilot</span>
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#FFB800] text-[#15120E]">
